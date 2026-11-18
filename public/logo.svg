@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="beanGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C87D55" />
+      <stop offset="50%" stop-color="#8B4B27" />
+      <stop offset="100%" stop-color="#2C1810" />
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E5A87B" />
+      <stop offset="100%" stop-color="#FED8CA" />
+    </linearGradient>
+    <linearGradient id="steamGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#C87D55" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#C87D55" stop-opacity="0.1" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#2C1810" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Background Base: Soft warm rounded emblem -->
+  <rect x="12" y="12" width="136" height="136" rx="36" fill="#F6F3ED" stroke="#E5E2DC" stroke-width="2" filter="url(#softGlow)" />
+  
+  <!-- Outer Gold Concentric Ring -->
+  <circle cx="80" cy="80" r="54" fill="none" stroke="#D8C2B8" stroke-width="1.5" stroke-dasharray="3 3" />
+
+  <!-- Coffee Bean Left Half -->
+  <path d="M 80 44 C 54 44 42 62 42 80 C 42 98 56 116 80 116 C 75 102 74 90 76 80 C 78 70 82 58 80 44 Z" 
+        fill="url(#beanGradient)" />
+
+  <!-- Coffee Bean Right Half -->
+  <path d="M 80 44 C 106 44 118 62 118 80 C 118 98 104 116 80 116 C 85 102 86 90 84 80 C 82 70 78 58 80 44 Z" 
+        fill="url(#beanGradient)" />
+
+  <!-- Velvet S-Curve Crema Slit -->
+  <path d="M 80 46 C 76 60 84 72 82 82 C 80 92 74 104 80 114" 
+        fill="none" stroke="url(#goldAccent)" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Delicate Steam tendrils rising from top -->
+  <path d="M 72 36 C 70 28 75 22 73 16" fill="none" stroke="url(#steamGradient)" stroke-width="2" stroke-linecap="round" />
+  <path d="M 86 34 C 88 27 84 21 87 15" fill="none" stroke="url(#steamGradient)" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M 98 38 C 100 32 97 26 99 20" fill="none" stroke="url(#steamGradient)" stroke-width="1.5" stroke-linecap="round" />
+
+  <!-- Sparkle dots -->
+  <circle cx="48" cy="52" r="2.5" fill="#C87D55" opacity="0.6" />
+  <circle cx="112" cy="108" r="2" fill="#C87D55" opacity="0.5" />
+</svg>
+
